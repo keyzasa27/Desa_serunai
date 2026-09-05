@@ -1,7 +1,6 @@
-/* =========================================
+/* ========================================
    RESET
-========================================= */
-
+======================================== */
 * {
     margin: 0;
     padding: 0;
@@ -13,366 +12,478 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    background: #f7f8f4;
-    color: #26382c;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #333;
     line-height: 1.6;
 }
 
+/* ========================================
+   CONTAINER
+======================================== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
 
-/* =========================================
-   NAVBAR
-========================================= */
-
-.navbar {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e9e5;
+/* ========================================
+   HEADER / NAVBAR
+======================================== */
+header {
+    background: #1769aa;
+    color: white;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.nav-container {
+.navbar {
+    width: 90%;
     max-width: 1100px;
     margin: auto;
-    padding: 14px 25px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    text-decoration: none;
-    color: #315c3b;
-    font-size: 20px;
-    font-weight: 700;
-    white-space: nowrap;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-nav {
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+/* ========================================
+   HERO / BERANDA
+======================================== */
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+    background: #eaf5ff;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Foto utama hero dibuat tidak terlalu besar */
+.hero img {
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+section {
+    padding: 45px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #1769aa;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* ========================================
+   SEMUA GAMBAR UMUM
+======================================== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mencegah gambar biasa menjadi terlalu besar */
+.content img,
+.about img,
+.profile img,
+.keindahan img,
+.kontak img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* ========================================
+   PROFIL DESA
+======================================== */
+.profile-section {
+    padding: 40px 0;
+}
+
+.profile-container {
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
+    gap: 30px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #59675e;
-    font-size: 15px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-    color: #315c3b;
-    font-weight: 700;
-}
-
-.menu-btn {
-    display: none;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #315c3b;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-
-/* =========================================
-   SECTION
-========================================= */
-
-.section {
+.profile-container img {
     width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 25px;
+    max-width: 350px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.section-label {
-    color: #6d8b74;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
+.profile-text {
+    flex: 1;
 }
 
-.gallery-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    line-height: 1.2;
-    color: #263d2d;
-    margin-bottom: 18px;
-}
-
-.gallery-title span {
-    color: #719078;
-}
-
-.gallery-intro {
-    max-width: 600px;
-    color: #68736b;
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 35px;
-}
-
-
-/* =========================================
-   GALERI FOTO
-========================================= */
-
-.gallery {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-
+/* ========================================
+   KEINDAHAN DESA
+======================================== */
+.keindahan-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.keindahan-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.keindahan-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ========================================
+   GALERI
+======================================== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
 }
 
 .gallery-item {
-    width: 100%;
-    height: 90px;
-
     overflow: hidden;
-    border-radius: 8px;
-
-    background: #e5ebe5;
-
-    box-shadow: 0 3px 10px rgba(38, 56, 44, 0.08);
+    border-radius: 10px;
+    background: white;
 }
 
-.gallery-item img {
+.gallery img {
     width: 100%;
-    height: 100%;
-
-    display: block;
-
+    height: 150px;
     object-fit: cover;
-
+    display: block;
     transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
+.gallery img:hover {
     transform: scale(1.05);
 }
 
+/* Jika menggunakan class gallery-grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
 
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
+.gallery-grid img {
     width: 100%;
-    background: #294633;
-    color: #ffffff;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* ========================================
+   CARD YANG MENGANDUNG FOTO
+======================================== */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* ========================================
+   KONTAK
+======================================== */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.contact-container img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+footer {
+    background: #1769aa;
+    color: white;
     text-align: center;
-
-    padding: 40px 20px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-.footer-logo {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
+/* ========================================
+   TOMBOL
+======================================== */
+.btn {
+    display: inline-block;
+    background: #1769aa;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
-footer p {
-    color: #d6dfd8;
-    font-size: 14px;
-    margin-bottom: 12px;
+.btn:hover {
+    background: #0d4f82;
 }
 
-footer small {
-    color: #b9c8bd;
-    font-size: 12px;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .nav-container {
-        padding: 14px 20px;
-    }
-
-    nav {
-        gap: 16px;
-    }
-
-    .gallery {
-        max-width: 520px;
-    }
-
-    .gallery-item {
-        height: 85px;
-    }
-}
-
-
-/* =========================================
-   HP
-========================================= */
-
+/* ========================================
+   RESPONSIVE HP
+======================================== */
 @media (max-width: 768px) {
 
-    /* NAVBAR */
-
-    .nav-container {
-        padding: 13px 18px;
-    }
-
-    .logo {
-        font-size: 17px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    nav {
-        display: none;
-
-        position: absolute;
-        top: 58px;
-        left: 0;
-
-        width: 100%;
-
-        padding: 15px 18px;
-
-        background: #ffffff;
-
+    .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 10px;
+    }
 
+    nav ul {
         gap: 12px;
-
-        border-bottom: 1px solid #e5e9e5;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    nav.show {
-        display: flex;
-    }
-
-    nav a {
-        width: 100%;
-        font-size: 14px;
-        padding: 4px 0;
-    }
-
-
-    /* SECTION */
-
-    .section {
-        padding: 45px 18px;
-    }
-
-
-    /* JUDUL */
-
-    .section-label {
-        font-size: 11px;
-    }
-
-    .gallery-title {
-        font-size: 32px;
-        line-height: 1.25;
-    }
-
-    .gallery-intro {
-        font-size: 13px;
-        line-height: 1.7;
-        margin-bottom: 28px;
-    }
-
-
-    /* GALERI KECIL DI HP */
-
-    .gallery {
-        width: 100%;
-        max-width: 300px;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 7px;
-    }
-
-    .gallery-item {
-        width: 100%;
-        height: 70px;
-
-        border-radius: 6px;
-    }
-
-    .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    /* FOOTER */
-
-    footer {
+    .hero {
         padding: 35px 15px;
-        margin-top: 20px;
     }
 
-    .footer-logo {
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    footer small {
-        font-size: 11px;
-    }
-}
-
-
-/* =========================================
-   HP KECIL
-========================================= */
-
-@media (max-width: 400px) {
-
-    .section {
-        padding: 40px 15px;
-    }
-
-    .gallery-title {
+    .hero h1 {
         font-size: 28px;
     }
 
-    .gallery-intro {
-        font-size: 12px;
+    .hero img {
+        max-width: 300px;
+        height: 190px;
     }
 
+    section {
+        padding: 30px 0;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    /* Profil */
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-container img {
+        max-width: 300px;
+        height: 190px;
+    }
+
+    /* Keindahan */
+    .keindahan-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .keindahan-card {
+        padding: 10px;
+    }
+
+    .keindahan-card img {
+        height: 130px;
+    }
+
+    /* Galeri */
     .gallery {
-        max-width: 270px;
-        gap: 6px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
     }
 
-    .gallery-item {
-        height: 63px;
-        border-radius: 5px;
+    .gallery img {
+        height: 90px;
+        border-radius: 7px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+    }
+
+    .gallery-grid img {
+        height: 90px;
+        border-radius: 7px;
+    }
+
+    /* Card */
+    .card img {
+        max-width: 280px;
+        height: 170px;
+    }
+
+    /* Kontak */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container img {
+        max-width: 280px;
+        height: 180px;
+    }
+
+    /* Gambar umum */
+    .content img,
+    .about img,
+    .profile img,
+    .keindahan img,
+    .kontak img {
+        max-width: 280px;
+        height: 180px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE HP KECIL
+======================================== */
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
     }
 
     .logo {
-        font-size: 16px;
+        font-size: 19px;
     }
-}
+
+    nav ul {
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero img {
+        max-width: 260px;
+        height: 165px;
+    }
+
+    /* Foto keindahan */
+    .keindahan-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .keindahan-card img {
+        height: 110px;
+    }
+
+    /* Galeri lebih kecil */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .gallery img {
+        height: 75px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .gallery-grid img {
+        height: 75px;
+    }
+
+    /* Foto halaman lain */
+    .content img,
+    .about img,
+    .profile img,
+    .keindahan img,
+    .kontak img {
+        max-width: 250px;
+        height: 160px;
+    }
+
+    .profile-container img {
+        max-width: 250px;
+        height: 160px;
+    }
+
+    .contact-container img {
+        max-width: 250px;
+        height: 160px;
+    }
+   }
