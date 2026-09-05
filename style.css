@@ -1,6 +1,6 @@
-/* ================================
+/* =========================================
    RESET
-================================ */
+========================================= */
 
 * {
     margin: 0;
@@ -20,9 +20,9 @@ body {
 }
 
 
-/* ================================
+/* =========================================
    NAVBAR
-================================ */
+========================================= */
 
 .navbar {
     width: 100%;
@@ -36,7 +36,7 @@ body {
 .nav-container {
     max-width: 1100px;
     margin: auto;
-    padding: 15px 25px;
+    padding: 14px 25px;
 
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 24px;
 }
 
 nav a {
@@ -74,27 +74,28 @@ nav a.active {
 .menu-btn {
     display: none;
     border: none;
+    outline: none;
     background: transparent;
     color: #315c3b;
-    font-size: 26px;
+    font-size: 25px;
     cursor: pointer;
 }
 
 
-/* ================================
+/* =========================================
    SECTION
-================================ */
+========================================= */
 
 .section {
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 70px 25px;
+    padding: 60px 25px;
 }
 
 .section-label {
     color: #6d8b74;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 12px;
@@ -102,7 +103,7 @@ nav a.active {
 
 .gallery-title {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 1.2;
     color: #263d2d;
     margin-bottom: 18px;
@@ -113,38 +114,38 @@ nav a.active {
 }
 
 .gallery-intro {
-    max-width: 620px;
+    max-width: 600px;
     color: #68736b;
     font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 40px;
+    line-height: 1.7;
+    margin-bottom: 35px;
 }
 
 
-/* ================================
-   GALERI
-================================ */
+/* =========================================
+   GALERI FOTO
+========================================= */
 
 .gallery {
     width: 100%;
-    max-width: 850px;
+    max-width: 600px;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 10px;
 }
 
 .gallery-item {
     width: 100%;
-    height: 155px;
+    height: 90px;
 
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 8px;
 
     background: #e5ebe5;
 
-    box-shadow: 0 5px 15px rgba(38, 56, 44, 0.08);
+    box-shadow: 0 3px 10px rgba(38, 56, 44, 0.08);
 }
 
 .gallery-item img {
@@ -155,7 +156,7 @@ nav a.active {
 
     object-fit: cover;
 
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover img {
@@ -163,23 +164,24 @@ nav a.active {
 }
 
 
-/* ================================
+/* =========================================
    FOOTER
-================================ */
+========================================= */
 
 footer {
+    width: 100%;
     background: #294633;
     color: #ffffff;
     text-align: center;
 
-    padding: 45px 20px;
+    padding: 40px 20px;
     margin-top: 30px;
 }
 
 .footer-logo {
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 footer p {
@@ -194,42 +196,45 @@ footer small {
 }
 
 
-/* ================================
+/* =========================================
    TABLET
-================================ */
+========================================= */
 
 @media (max-width: 900px) {
 
-    .gallery {
-        max-width: 750px;
-        gap: 14px;
-    }
-
-    .gallery-item {
-        height: 145px;
+    .nav-container {
+        padding: 14px 20px;
     }
 
     nav {
-        gap: 17px;
+        gap: 16px;
+    }
+
+    .gallery {
+        max-width: 520px;
+    }
+
+    .gallery-item {
+        height: 85px;
     }
 }
 
 
-/* ================================
+/* =========================================
    HP
-================================ */
+========================================= */
 
 @media (max-width: 768px) {
 
+    /* NAVBAR */
+
     .nav-container {
-        padding: 14px 18px;
+        padding: 13px 18px;
     }
 
     .logo {
         font-size: 17px;
     }
-
-    /* Tombol menu HP */
 
     .menu-btn {
         display: block;
@@ -239,19 +244,19 @@ footer small {
         display: none;
 
         position: absolute;
-        top: 60px;
+        top: 58px;
         left: 0;
 
         width: 100%;
 
-        background: #ffffff;
+        padding: 15px 18px;
 
-        padding: 18px;
+        background: #ffffff;
 
         flex-direction: column;
         align-items: flex-start;
 
-        gap: 15px;
+        gap: 12px;
 
         border-bottom: 1px solid #e5e9e5;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -264,51 +269,65 @@ footer small {
     nav a {
         width: 100%;
         font-size: 14px;
-        padding: 5px 0;
+        padding: 4px 0;
     }
 
 
-    /* Section */
+    /* SECTION */
 
     .section {
-        padding: 50px 18px;
+        padding: 45px 18px;
     }
 
 
-    /* Judul */
+    /* JUDUL */
+
+    .section-label {
+        font-size: 11px;
+    }
 
     .gallery-title {
-        font-size: 34px;
+        font-size: 32px;
         line-height: 1.25;
     }
 
     .gallery-intro {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.7;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
 
 
-    /* Galeri HP */
+    /* GALERI KECIL DI HP */
 
     .gallery {
         width: 100%;
+        max-width: 300px;
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
-        gap: 12px;
+        gap: 7px;
     }
 
     .gallery-item {
-        height: 120px;
-        border-radius: 10px;
+        width: 100%;
+        height: 70px;
+
+        border-radius: 6px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
-    /* Footer */
+    /* FOOTER */
 
     footer {
-        padding: 35px 18px;
+        padding: 35px 15px;
+        margin-top: 20px;
     }
 
     .footer-logo {
@@ -316,14 +335,18 @@ footer small {
     }
 
     footer p {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    footer small {
+        font-size: 11px;
     }
 }
 
 
-/* ================================
+/* =========================================
    HP KECIL
-================================ */
+========================================= */
 
 @media (max-width: 400px) {
 
@@ -332,23 +355,24 @@ footer small {
     }
 
     .gallery-title {
-        font-size: 29px;
+        font-size: 28px;
     }
 
     .gallery-intro {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .gallery {
-        gap: 9px;
+        max-width: 270px;
+        gap: 6px;
     }
 
     .gallery-item {
-        height: 105px;
-        border-radius: 9px;
+        height: 63px;
+        border-radius: 5px;
     }
 
     .logo {
         font-size: 16px;
     }
-        }
+}
