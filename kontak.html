@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
           rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- STYLE CSS -->
     <link rel="stylesheet"
           href="style.css">
 
@@ -39,24 +39,24 @@
 
     <div class="nav-container">
 
-        <a href="index.html"
-           class="logo">
+        <a href="index.html" class="logo">
             🌿 Desa Serunai
         </a>
 
 
-        <!-- MENU BUTTON HP -->
+        <!-- TOMBOL MENU HP -->
 
-        <button class="menu-btn"
-                onclick="toggleMenu()"
-                aria-label="Buka menu">
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+            aria-label="Buka menu">
 
             ☰
 
         </button>
 
 
-        <!-- NAVIGATION -->
+        <!-- MENU NAVBAR -->
 
         <nav id="navMenu">
 
@@ -76,8 +76,7 @@
                 Galeri
             </a>
 
-            <a href="kontak.html"
-               class="active">
+            <a href="kontak.html" class="active">
                 Kontak
             </a>
 
@@ -100,7 +99,7 @@
          HEADER KONTAK
     ================================================= -->
 
-    <section class="section">
+    <section class="section contact-intro">
 
         <div class="section-label">
             HUBUNGI KAMI
@@ -125,6 +124,28 @@
 
 
         <!-- =================================================
+             FOTO KANTOR DESA
+        ================================================= -->
+
+        <div class="office-image">
+
+            <img
+                src="kantordesa.jpg"
+                alt="Kantor Desa Serunai">
+
+        </div>
+
+
+        <!-- =================================================
+             JUDUL INFORMASI
+        ================================================= -->
+
+        <div class="section-label contact-label">
+            INFORMASI DESA
+        </div>
+
+
+        <!-- =================================================
              CONTACT GRID
         ================================================= -->
 
@@ -135,18 +156,19 @@
 
             <div class="contact-card">
 
+                <div class="contact-icon">
+                    📍
+                </div>
+
                 <h3>
-                    📍 Alamat
+                    Alamat
                 </h3>
 
                 <p>
 
                     Desa Serunai<br>
-
                     Kecamatan Salatiga<br>
-
                     Kabupaten Sambas<br>
-
                     Kalimantan Barat
 
                 </p>
@@ -159,8 +181,12 @@
 
             <div class="contact-card">
 
+                <div class="contact-icon">
+                    📞
+                </div>
+
                 <h3>
-                    📞 Telepon
+                    Telepon
                 </h3>
 
                 <p>
@@ -180,8 +206,12 @@
 
             <div class="contact-card">
 
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
                 <h3>
-                    ✉️ Email
+                    Email
                 </h3>
 
                 <p>
@@ -200,14 +230,17 @@
 
             <div class="contact-card">
 
+                <div class="contact-icon">
+                    🕐
+                </div>
+
                 <h3>
-                    🕐 Jam Pelayanan
+                    Jam Pelayanan
                 </h3>
 
                 <p>
 
                     Senin – Jumat<br>
-
                     08.00 – 15.00 WIB
 
                 </p>
@@ -225,7 +258,6 @@
     ================================================= -->
 
     <section class="section location-section">
-
 
         <div class="section-label">
             LOKASI
@@ -249,33 +281,23 @@
         </p>
 
 
-
         <!-- =================================================
-             GOOGLE MAP
+             GOOGLE MAPS
         ================================================= -->
 
         <div class="map-container">
 
             <iframe
-
                 src="https://www.google.com/maps?q=Serunai%2C%20Kec.%20Salatiga%2C%20Kabupaten%20Sambas%2C%20Kalimantan%20Barat&output=embed"
-
                 width="100%"
-
                 height="450"
-
                 style="border:0;"
-
                 allowfullscreen=""
-
                 loading="lazy"
-
                 referrerpolicy="no-referrer-when-downgrade">
-
             </iframe>
 
         </div>
-
 
 
         <!-- =================================================
@@ -283,22 +305,16 @@
         ================================================= -->
 
         <a
-
             href="https://maps.app.goo.gl/JvZLy4NHyJTQz9Tv5"
-
             target="_blank"
-
             rel="noopener noreferrer"
-
             class="map-button">
 
             📍 Buka Lokasi di Google Maps
 
         </a>
 
-
     </section>
-
 
 </main>
 
@@ -311,17 +327,11 @@
 <footer>
 
     <div class="footer-logo">
-
         🌿 Desa Serunai
-
     </div>
 
-
     <p>
-
-        © 2026 Desa Serunai.
-        Semua hak dilindungi.
-
+        © 2026 Desa Serunai. Semua hak dilindungi.
     </p>
 
 </footer>
@@ -336,8 +346,7 @@
 
 function toggleMenu() {
 
-    const nav =
-        document.getElementById("navMenu");
+    const nav = document.getElementById("navMenu");
 
     nav.classList.toggle("show");
 
@@ -348,4 +357,4 @@ function toggleMenu() {
 
 </body>
 
-</html>
+                </html>
