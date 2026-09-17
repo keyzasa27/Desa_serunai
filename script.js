@@ -16,6 +16,7 @@ function toggleMenu() {
 }
 
 
+
 /* =====================================================
    MENUTUP MENU SETELAH LINK DIKLIK
    ===================================================== */
@@ -26,20 +27,24 @@ const navLinks =
 
 navLinks.forEach(function(link) {
 
-    link.addEventListener("click", function() {
+    link.addEventListener(
+        "click",
+        function() {
 
-        const navMenu =
-            document.getElementById("navMenu");
+            const navMenu =
+                document.getElementById("navMenu");
 
-        if (navMenu) {
+            if (navMenu) {
 
-            navMenu.classList.remove("show");
+                navMenu.classList.remove("show");
+
+            }
 
         }
-
-    });
+    );
 
 });
+
 
 
 /* =====================================================
@@ -78,5 +83,86 @@ function sendMessage(event) {
 
 
     event.target.reset();
+
+}
+
+
+
+/* =====================================================
+   FORM PENGADUAN
+   ===================================================== */
+
+function sendComplaint(event) {
+
+    event.preventDefault();
+
+
+    const nama =
+        document.getElementById(
+            "complaint-name"
+        ).value;
+
+
+    const telepon =
+        document.getElementById(
+            "complaint-phone"
+        ).value;
+
+
+    const kategori =
+        document.getElementById(
+            "complaint-category"
+        ).value;
+
+
+    const lokasi =
+        document.getElementById(
+            "complaint-location"
+        ).value;
+
+
+    const pesan =
+        document.getElementById(
+            "complaint-message"
+        ).value;
+
+
+    if (
+        nama === "" ||
+        telepon === "" ||
+        kategori === "" ||
+        lokasi === "" ||
+        pesan === ""
+    ) {
+
+        alert(
+            "Silakan lengkapi semua data pengaduan."
+        );
+
+        return;
+
+    }
+
+
+    alert(
+        "PENGADUAN BERHASIL DIKIRIM\n\n" +
+
+        "Nama: " +
+        nama +
+
+        "\nJenis: " +
+        kategori +
+
+        "\nLokasi: " +
+        lokasi +
+
+        "\n\nTerima kasih telah menyampaikan " +
+        "pengaduan kepada Desa Serunai."
+    );
+
+
+    document
+        .getElementById("complaintForm")
+        .reset();
 
 }
