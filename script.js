@@ -1,6 +1,6 @@
-/* =========================================
-   MENU MOBILE
-   ========================================= */
+/* =====================================================
+   MENU NAVBAR
+   ===================================================== */
 
 function toggleMenu() {
 
@@ -16,12 +16,13 @@ function toggleMenu() {
 }
 
 
-/* =========================================
-   TUTUP MENU SETELAH LINK DIKLIK
-   ========================================= */
+/* =====================================================
+   MENUTUP MENU SETELAH LINK DIKLIK
+   ===================================================== */
 
 const navLinks =
     document.querySelectorAll("#navMenu a");
+
 
 navLinks.forEach(function(link) {
 
@@ -41,13 +42,14 @@ navLinks.forEach(function(link) {
 });
 
 
-/* =========================================
+/* =====================================================
    FORM KONTAK
-   ========================================= */
+   ===================================================== */
 
 function sendMessage(event) {
 
     event.preventDefault();
+
 
     const nama =
         document.getElementById("nama").value;
@@ -58,17 +60,22 @@ function sendMessage(event) {
     const pesan =
         document.getElementById("pesan").value;
 
+
     alert(
         "Terima kasih, " +
         nama +
         "!\n\n" +
-        "Pesan Anda berhasil diisi.\n\n" +
+
+        "Pesan Anda berhasil diisi." +
+        "\n\n" +
+
         "Email: " +
         email +
-        "\n" +
-        "Pesan: " +
+
+        "\n\nPesan: " +
         pesan
     );
+
 
     event.target.reset();
 
