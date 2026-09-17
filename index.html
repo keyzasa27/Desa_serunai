@@ -3,110 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Desa Serunai | Beranda</title>
 
     <!-- GOOGLE FONT -->
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =====================================
-         DEKORASI BUNGA TULIP
-    ====================================== -->
+    <!-- DEKORASI LANGIT -->
+    <div class="cloud cloud-1">☁️</div>
+    <div class="cloud cloud-2">☁️</div>
+    <div class="cloud cloud-3">☁️</div>
 
-    <div class="tulip tulip-1">🌷</div>
+    <div class="bird bird-1">🕊️</div>
+    <div class="bird bird-2">🕊️</div>
+    <div class="bird bird-3">🐦</div>
 
-    <div class="tulip tulip-2">🌷</div>
+    <div class="flower flower-1">🌷</div>
+    <div class="flower flower-2">🌼</div>
+    <div class="flower flower-3">🌷</div>
+    <div class="flower flower-4">🌸</div>
 
-    <div class="tulip tulip-3">🌷</div>
-
-    <div class="tulip tulip-4">🌷</div>
-
-    <div class="tulip tulip-5">🌷</div>
-
-
-    <!-- =====================================
-         NAVBAR
-    ====================================== -->
-
+    <!-- NAVBAR -->
     <header class="navbar">
 
         <div class="nav-container">
 
-            <!-- LOGO -->
-
-            <a href="index.html"
-               class="logo">
-
-                <span class="logo-flower">🌷</span>
-
-                <span>
-                    Desa Serunai
-                </span>
-
+            <a href="index.html" class="logo">
+                🌼 Desa Serunai
             </a>
 
-
-            <!-- MENU BUTTON HP -->
-
-            <button class="menu-btn"
-                    onclick="toggleMenu()">
-
+            <button class="menu-btn" onclick="toggleMenu()">
                 ☰
-
             </button>
-
-
-            <!-- NAVIGATION -->
 
             <nav id="navMenu">
 
-                <a href="index.html"
-                   class="active">
-
+                <a href="index.html" class="active">
                     Beranda
-
                 </a>
 
                 <a href="profil.html">
-
                     Profil
-
                 </a>
 
                 <a href="kehidupan.html">
-
                     Kehidupan
-
                 </a>
 
                 <a href="budaya.html">
-
                     Budaya
+                </a>
 
+                <a href="galeri.html">
+                    Galeri
                 </a>
 
                 <a href="kontak.html">
-
                     Kontak
-
                 </a>
 
             </nav>
@@ -116,273 +80,193 @@
     </header>
 
 
-
-    <!-- =====================================
-         HERO
-    ====================================== -->
-
+    <!-- HERO -->
     <section class="hero">
-
-        <!-- DEKORASI TULIP -->
-
-        <div class="hero-flower flower-left">
-            🌷
-        </div>
-
-        <div class="hero-flower flower-right">
-            🌷
-        </div>
-
 
         <div class="hero-content">
 
-
-            <!-- TEKS HERO -->
-
-            <div class="hero-text">
-
-                <p class="small-title">
-                    SELAMAT DATANG DI
-                </p>
-
-
-                <h1>
-
-                    Desa
-
-                    <span>
-                        Serunai
-                    </span>
-
-                </h1>
-
-
-                <p class="hero-description">
-
-                    Mengenal lebih dekat keindahan,
-                    kehidupan, budaya, dan potensi
-                    Desa Serunai.
-
-                </p>
-
-
-                <!-- BUTTON -->
-
-                <div class="hero-buttons">
-
-                    <a href="profil.html"
-                       class="btn-primary">
-
-                        Jelajahi Desa
-
-                    </a>
-
-
-                    <a href="kontak.html"
-                       class="btn-secondary">
-
-                        Hubungi Kami
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- GAMBAR HERO -->
-
-            <div class="hero-image">
-
-                <div class="image-frame">
-
-                    <img src="images/desa.jpg"
-                         alt="Desa Serunai">
-
-                </div>
-
-
-                <div class="flower-decoration">
-                    🌷
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================
-         TENTANG DESA
-    ====================================== -->
-
-    <section class="section">
-
-        <div class="section-title">
-
-            <p>
-                SEKILAS TENTANG
+            <p class="hello">
+                SELAMAT DATANG DI
             </p>
 
-            <h2>
-                Desa Serunai
-            </h2>
+            <h1>
+                Desa <span>Serunai</span>
+            </h1>
 
-        </div>
+            <p>
+                Desa kecil dengan sejuta pesona, tempat
+                kehidupan yang harmonis, budaya yang kaya,
+                dan alam yang memikat hati.
+            </p>
 
+            <div class="hero-buttons">
 
-        <div class="about-grid">
+                <a href="profil.html" class="btn btn-primary">
+                    Jelajahi Desa →
+                </a>
 
-
-            <!-- FOTO -->
-
-            <div class="about-image">
-
-                <img src="images/desa2.jpg"
-                     alt="Pemandangan Desa Serunai">
-
-            </div>
-
-
-            <!-- TEKS -->
-
-            <div class="about-text">
-
-                <h3>
-                    Desa yang Asri
-                    dan Penuh Kehangatan
-                </h3>
-
-
-                <p>
-
-                    Desa Serunai merupakan desa
-                    yang memiliki keindahan alam,
-                    kehidupan masyarakat yang
-                    harmonis, serta kekayaan budaya
-                    yang terus dijaga.
-
-                </p>
-
-
-                <p>
-
-                    Website ini dibuat sebagai media
-                    informasi untuk memperkenalkan
-                    Desa Serunai kepada masyarakat
-                    luas.
-
-                </p>
-
-
-                <a href="profil.html"
-                   class="read-more">
-
-                    Selengkapnya →
-
+                <a href="kontak.html" class="btn btn-outline">
+                    Tentang Kami
                 </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <div class="hero-image">
 
+            <div class="image-frame">
 
-    <!-- =====================================
-         KEUNGGULAN DESA
-    ====================================== -->
+                <img
+                    src="images/desa.jpg"
+                    alt="Pemandangan Desa Serunai"
+                >
 
-    <section class="section feature-section">
-
-
-        <div class="section-title">
-
-            <p>
-                KEUNGGULAN DESA
-            </p>
-
-            <h2>
-                Pesona Desa Serunai
-            </h2>
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="card-grid">
 
+    <!-- FITUR -->
+    <section class="feature-section">
 
-            <!-- CARD 1 -->
+        <div class="feature-grid">
 
             <div class="info-card">
 
-                <div class="card-icon">
+                <div class="icon">
+                    🏡
+                </div>
+
+                <h3>
+                    Alam yang Indah
+                </h3>
+
+                <p>
+                    Dikelilingi pegunungan,
+                    sawah dan udara yang sejuk.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    👨‍👩‍👧‍👦
+                </div>
+
+                <h3>
+                    Masyarakat Ramah
+                </h3>
+
+                <p>
+                    Warga yang hidup rukun
+                    dan saling membantu.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
                     🌿
                 </div>
 
                 <h3>
-                    Alam
+                    Potensi Desa
                 </h3>
 
                 <p>
-
-                    Lingkungan desa yang asri
-                    dengan suasana alami dan
-                    menenangkan.
-
+                    Pertanian, perkebunan,
+                    dan usaha kreatif masyarakat.
                 </p>
 
             </div>
 
 
-
-            <!-- CARD 2 -->
-
             <div class="info-card">
 
-                <div class="card-icon">
+                <div class="icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Budaya Lestari
+                </h3>
+
+                <p>
+                    Tradisi dan kearifan lokal
+                    yang terus dijaga.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TENTANG DESA -->
+    <section class="section">
+
+        <div class="about">
+
+            <div class="about-text">
+
+                <h2>
+                    Tentang Desa Serunai
+                </h2>
+
+                <p>
+                    Desa Serunai adalah sebuah desa yang
+                    terletak di tengah alam yang asri,
+                    dengan masyarakat yang ramah,
+                    budaya yang kuat, serta potensi alam
+                    yang luar biasa.
+                </p>
+
+                <p>
+                    Kami berkomitmen untuk terus menjaga
+                    dan mengembangkan desa agar semakin
+                    maju dan sejahtera.
+                </p>
+
+                <a href="profil.html" class="btn btn-primary">
+                    Baca Selengkapnya →
+                </a>
+
+            </div>
+
+
+            <div class="about-image">
+
+                <img
+                    src="images/desa2.jpg"
+                    alt="Desa Serunai"
+                >
+
+            </div>
+
+
+            <div class="quote-box">
+
+                <span>
                     🌷
-                </div>
-
-                <h3>
-                    Keindahan
-                </h3>
+                </span>
 
                 <p>
-
-                    Pemandangan dan suasana
-                    pedesaan yang indah untuk
-                    dinikmati.
-
+                    "Bersama kita membangun desa
+                    yang lebih baik"
                 </p>
 
-            </div>
-
-
-
-            <!-- CARD 3 -->
-
-            <div class="info-card">
-
-                <div class="card-icon">
-                    🤝
-                </div>
-
-                <h3>
-                    Masyarakat
-                </h3>
-
-                <p>
-
-                    Masyarakat yang ramah,
-                    gotong royong, dan hidup
-                    berdampingan.
-
-                </p>
+                <span>
+                    💙
+                </span>
 
             </div>
 
@@ -391,109 +275,58 @@
     </section>
 
 
+    <!-- SAMBUTAN -->
+    <section class="welcome">
 
-    <!-- =====================================
-         PESAN DESA
-    ====================================== -->
-
-    <section class="welcome-section">
-
-        <div class="welcome-box">
-
-            <div class="welcome-flower">
-                🌷
-            </div>
-
-            <p class="welcome-small">
-                DESA SERUNAI
-            </p>
-
-            <h2>
-                Indah Desanya,
-                Harmonis Masyarakatnya
-            </h2>
-
-            <p>
-
-                Mari bersama mengenal,
-                menjaga, dan mengembangkan
-                potensi Desa Serunai.
-
-            </p>
-
+        <div class="welcome-icon">
+            🌷
         </div>
+
+        <h2>
+            Indah Desanya,
+            Harmonis Masyarakatnya
+        </h2>
+
+        <p>
+            Mari bersama-sama mengenal,
+            menjaga, dan mengembangkan
+            Desa Serunai.
+        </p>
 
     </section>
 
 
-
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
-
+    <!-- FOOTER -->
     <footer>
 
-        <div class="footer-content">
+        <div class="footer-logo">
+            🌼 Desa Serunai
+        </div>
 
+        <p>
+            Bersama Membangun Masa Depan
+        </p>
 
-            <h3>
-                🌷 Desa Serunai
-            </h3>
+        <div class="footer-links">
 
-
-            <p>
-
-                Bersama membangun desa
-                yang indah, maju, dan harmonis.
-
-            </p>
-
-
-            <div class="footer-line"></div>
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Beranda
-                </a>
-
-                <a href="profil.html">
-                    Profil
-                </a>
-
-                <a href="kehidupan.html">
-                    Kehidupan
-                </a>
-
-                <a href="budaya.html">
-                    Budaya
-                </a>
-
-                <a href="kontak.html">
-                    Kontak
-                </a>
-
-            </div>
-
-
-            <p class="copyright">
-
-                © 2026 Desa Serunai.
-                All Rights Reserved.
-
-            </p>
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="kehidupan.html">Kehidupan</a>
+            <a href="budaya.html">Budaya</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
 
         </div>
+
+        <p>
+            © 2026 Desa Serunai.
+            Semua hak dilindungi.
+        </p>
 
     </footer>
 
 
-
-    <!-- JAVASCRIPT -->
-
     <script src="script.js"></script>
 
 </body>
-
     </html>
