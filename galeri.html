@@ -1,118 +1,207 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Galeri Desa Serunai</title>
 
-    <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+    <div class="cloud cloud-1">☁️</div>
+    <div class="cloud cloud-2">☁️</div>
 
-<header class="navbar">
+    <div class="bird bird-1">🕊️</div>
+    <div class="bird bird-2">🐦</div>
 
-    <div class="nav-container">
+    <div class="flower flower-1">🌷</div>
+    <div class="flower flower-2">🌼</div>
 
-        <a href="index.html" class="logo">
-            🌿 Desa Serunai
-        </a>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <!-- NAVBAR -->
 
-        <nav id="navMenu">
+    <header class="navbar">
 
-            <a href="index.html">Beranda</a>
+        <div class="nav-container">
 
-            <a href="profil.html">Profil</a>
-
-            <a href="keindahan.html">Keindahan</a>
-
-            <a href="galeri.html" class="active">
-                Galeri
+            <a href="index.html" class="logo">
+                🌼 Desa Serunai
             </a>
 
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+
+                <a href="index.html">
+                    Beranda
+                </a>
+
+                <a href="profil.html">
+                    Profil
+                </a>
+
+                <a href="kehidupan.html">
+                    Kehidupan
+                </a>
+
+                <a href="budaya.html">
+                    Budaya
+                </a>
+
+                <a href="galeri.html" class="active">
+                    Galeri
+                </a>
+
+                <a href="kontak.html">
+                    Kontak
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <h1>
+            Galeri Desa Serunai
+        </h1>
+
+        <p>
+            Dokumentasi keindahan dan kegiatan desa
+        </p>
+
+    </section>
+
+
+    <!-- GALERI -->
+
+    <section class="content-box">
+
+        <div class="section-title">
+
+            <h2>
+                Galeri Desa
+            </h2>
+
+            <p>
+                Beberapa dokumentasi Desa Serunai
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="images/desa.jpg"
+                    alt="Pemandangan Desa"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/desa2.jpg"
+                    alt="Suasana Desa"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/desa3.jpg"
+                    alt="Lingkungan Desa"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/kegiatan1.jpg"
+                    alt="Kegiatan Desa"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/kegiatan2.jpg"
+                    alt="Kegiatan Masyarakat"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/kegiatan3.jpg"
+                    alt="Aktivitas Warga"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="images/budaya.jpg"
+                    alt="Budaya Desa"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌼 Desa Serunai
+        </div>
+
+        <p>
+            Bersama Membangun Masa Depan
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="kehidupan.html">Kehidupan</a>
+            <a href="budaya.html">Budaya</a>
+            <a href="galeri.html">Galeri</a>
             <a href="kontak.html">Kontak</a>
 
-        </nav>
-
-    </div>
-
-</header>
-
-
-<section class="section gallery-section">
-
-    <div class="section-label">
-        GALERI DESA
-    </div>
-
-    <h1 class="gallery-title">
-        Momen & kehidupan<br>
-        <span>Desa Serunai.</span>
-    </h1>
-
-    <p class="gallery-intro">
-        Kumpulan foto yang menggambarkan kehidupan,
-        lingkungan, kegiatan, dan keindahan Desa Serunai.
-    </p>
-
-
-    <div class="gallery">
-
-        <div class="gallery-item large">
-            <img src="sawah.jpg" alt="Sawah Desa Serunai">
         </div>
 
-        <div class="gallery-item">
-            <img src="kegiatan1.jpg" alt="Kegiatan Masyarakat Desa Serunai">
-        </div>
+        <p>
+            © 2026 Desa Serunai.
+        </p>
 
-        <div class="gallery-item">
-            <img src="keindahan3.jpg" alt="Lingkungan Desa Serunai">
-        </div>
-
-        <div class="gallery-item">
-            <img src="sekolah.jpg" alt="Sekolah Desa Serunai">
-        </div>
-
-        <div class="gallery-item">
-            <img src="masjid.jpg" alt="Masjid Desa Serunai">
-        </div>
-
-        <div class="gallery-item large">
-            <img src="jalanserunai1.jpg" alt="Jalan Desa Serunai">
-        </div>
-
-    </div>
-
-</section>
+    </footer>
 
 
-<footer>
-
-    <div class="footer-logo">
-        🌿 Desa Serunai
-    </div>
-
-    <p>
-        Dokumentasi kehidupan dan keindahan Desa Serunai.
-    </p>
-
-    <small>© 2026 Desa Serunai</small>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
